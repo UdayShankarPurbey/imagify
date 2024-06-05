@@ -5,11 +5,6 @@ export const navLinks = [
       icon: "/assets/icons/home.svg",
     },
     {
-      label: "Profile",
-      route: "/authorized/profile",
-      icon: "/assets/icons/profile.svg",
-    },
-    {
       label: "Buy Credits",
       route: "/authorized/credits",
       icon: "/assets/icons/bag.svg",
@@ -42,7 +37,14 @@ export const navLinks = [
     },
    
     
-  ];
+];
+export const navLinksBottom = [
+  {
+    label: "Profile",
+    route: "/authorized/profile",
+    icon: "/assets/icons/profile.svg",
+  },
+]
   
   export const plans = [
     {

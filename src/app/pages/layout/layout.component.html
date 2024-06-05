@@ -24,6 +24,19 @@
             </li>
           </ul>
         </li>
+        <!-- //todo: i wnat it at the end of the the row -->
+        <li nz-submenu nzOpen nzTitle="User" nzIcon="user" class="">
+          <ul>
+            <li nz-menu-item nzMatchRouter *ngFor="let link of navLinksBottom" >
+              <a [routerLink]="link.route">
+                <span nz-icon >
+                  <img [src]="link.icon" [alt]="link.label + ' Svg Not Found'" class="rounded-full mr-4">
+                </span>
+                {{ link.label }}
+              </a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </nz-sider>
     <nz-layout>

@@ -1,8 +1,8 @@
-import { navLinks } from './../../core/endpoints';
+import { navLinks, navLinksBottom } from './../../core/endpoints';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 
@@ -16,13 +16,13 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
     NzLayoutModule, 
     NzMenuModule,
     RouterLink,
-    RouterLinkActive,
   ],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.css'
 })
 export class LayoutComponent {
   navLinks = navLinks;
+  navLinksBottom = navLinksBottom;
   isCollapsed = false;
 
   getIconType(iconUrl: string): string {
