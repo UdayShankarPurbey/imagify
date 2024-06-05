@@ -14,7 +14,7 @@ export const navLinks = [
       route: "/authorized/credits",
       icon: "/assets/icons/bag.svg",
     },
-    
+    // todo: check it once
     {
       label: "Image Restore",
       route: "/transformations/add/restore",
