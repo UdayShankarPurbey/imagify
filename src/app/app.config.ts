@@ -9,9 +9,18 @@ import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { provideHttpClient } from '@angular/common/http';
+import { provideAuth0 } from '@auth0/auth0-angular';
 
 registerLocaleData(en);
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideNzIcons(), provideNzI18n(en_US), importProvidersFrom(FormsModule), provideAnimationsAsync(), provideHttpClient()]
+  providers: [provideRouter(routes), provideNzIcons(), provideNzI18n(en_US), importProvidersFrom(FormsModule), provideAnimationsAsync(), provideHttpClient(),provideAuth0(
+    {
+      domain: 'dev-lgq3vhegdk3h0meu.us.auth0.com',
+      clientId: 'CgQmnpmHiRFKgPKO6xhbuBWE7BeUISjS',
+      authorizationParams: {
+        redirect_uri: window.location.origin
+      }
+    }
+  ),]
 };

@@ -5,6 +5,17 @@ export const routes: Routes = [
  
   {
     path : '',
-    component : LayoutComponent
+    component : LayoutComponent,
+    children : [
+      {
+        path : '',
+        redirectTo : 'authorized',
+        pathMatch : 'full'
+      },
+      {
+        path : 'authorized',
+        loadChildren : () => import('./pages/authorized/authorized.module').then(m => m.AuthorizedModule)
+      }      
+    ]
   }
 ];
