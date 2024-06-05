@@ -14,13 +14,5 @@ import { provideAuth0 } from '@auth0/auth0-angular';
 registerLocaleData(en);
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideNzIcons(), provideNzI18n(en_US), importProvidersFrom(FormsModule), provideAnimationsAsync(), provideHttpClient(),provideAuth0(
-    {
-      domain: 'dev-lgq3vhegdk3h0meu.us.auth0.com',
-      clientId: 'CgQmnpmHiRFKgPKO6xhbuBWE7BeUISjS',
-      authorizationParams: {
-        redirect_uri: window.location.origin
-      }
-    }
-  ),]
+  providers: [provideRouter(routes), provideNzIcons(), provideNzI18n(en_US), importProvidersFrom(FormsModule), provideAnimationsAsync(), provideHttpClient(),]
 };
