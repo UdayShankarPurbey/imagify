@@ -196,3 +196,13 @@ export const navLinksBottom = [
   };
   
   export const creditFee = -1;
+
+  export const backendEndPoints = {
+    'register' : 'users/create',
+    'login' : 'users/login',
+    'logout' : 'users/logout',
+    'getUser' : 'users/get-user',
+    'updateUser' : 'users/update-user',
+    'deleteUser' : 'users/delete-user',
+    'getCredit' : 'users/get-credit',
+  }
