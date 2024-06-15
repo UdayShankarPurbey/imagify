@@ -45,7 +45,7 @@ export const navLinksBottom = [
   },
 ]
   
-  export const plans = [
+export const plans = [
     {
       _id: 1,
       name: "Free",
@@ -121,11 +121,10 @@ export const navLinksBottom = [
         },
       ],
     },
-  ];
+];
   
-  export const transformationTypes = {
+export const transformationTypes = {
     restore: {
-      // Image Restore
       type: "restore",
       title: "Restore Image",
       subTitle: "Refine images by removing noise and imperfections",
@@ -133,8 +132,7 @@ export const navLinksBottom = [
       icon: "image.svg",
     },
     removeBackground: {
-      // Background Remove
-      type: "removeBackground",
+          type: "removeBackground",
       title: "Background Remove",
       subTitle: "Removes the background of the image using AI",
       config: { removeBackground: true },
