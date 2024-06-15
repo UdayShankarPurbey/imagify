@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UpdateComponent } from './update.component';
+import { SubLayoutComponent } from './sub-layout.component';
 
-describe('UpdateComponent', () => {
-  let component: UpdateComponent;
-  let fixture: ComponentFixture<UpdateComponent>;
+describe('SubLayoutComponent', () => {
+  let component: SubLayoutComponent;
+  let fixture: ComponentFixture<SubLayoutComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UpdateComponent]
+      imports: [SubLayoutComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(UpdateComponent);
+    fixture = TestBed.createComponent(SubLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

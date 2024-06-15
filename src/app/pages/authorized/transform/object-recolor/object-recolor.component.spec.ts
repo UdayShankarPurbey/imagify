@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TransformationComponent } from './transformation.component';
+import { ObjectRecolorComponent } from './object-recolor.component';
 
-describe('TransformationComponent', () => {
-  let component: TransformationComponent;
-  let fixture: ComponentFixture<TransformationComponent>;
+describe('ObjectRecolorComponent', () => {
+  let component: ObjectRecolorComponent;
+  let fixture: ComponentFixture<ObjectRecolorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TransformationComponent]
+      imports: [ObjectRecolorComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(TransformationComponent);
+    fixture = TestBed.createComponent(ObjectRecolorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

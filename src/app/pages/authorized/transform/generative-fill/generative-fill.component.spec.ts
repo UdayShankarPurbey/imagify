@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddTypesComponent } from './add-types.component';
+import { GenerativeFillComponent } from './generative-fill.component';
 
-describe('AddTypesComponent', () => {
-  let component: AddTypesComponent;
-  let fixture: ComponentFixture<AddTypesComponent>;
+describe('GenerativeFillComponent', () => {
+  let component: GenerativeFillComponent;
+  let fixture: ComponentFixture<GenerativeFillComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AddTypesComponent]
+      imports: [GenerativeFillComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(AddTypesComponent);
+    fixture = TestBed.createComponent(GenerativeFillComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

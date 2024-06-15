@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TransformComponent } from './transform.component';
+import { ObjectRemoveComponent } from './object-remove.component';
 
-describe('TransformComponent', () => {
-  let component: TransformComponent;
-  let fixture: ComponentFixture<TransformComponent>;
+describe('ObjectRemoveComponent', () => {
+  let component: ObjectRemoveComponent;
+  let fixture: ComponentFixture<ObjectRemoveComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TransformComponent]
+      imports: [ObjectRemoveComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(TransformComponent);
+    fixture = TestBed.createComponent(ObjectRemoveComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

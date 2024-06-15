@@ -58,7 +58,7 @@ export class RegisterComponent {
     },
     (error) => {
         console.error(error.error);
-        this.messageService.create('error',error)
+        this.messageService.create('error',error.error.message)
       }
     )
   }

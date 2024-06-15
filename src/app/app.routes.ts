@@ -4,7 +4,7 @@ import { LoginComponent } from './pages/user/login/login.component';
 import { RegisterComponent } from './pages/user/register/register.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { AboutUserComponent } from './pages/user/about-user/about-user.component';
-import { UpdateComponent } from './pages/authorized/transformation/update/update.component';
+import { UpdateUserComponent } from './pages/user/update-user/update-user.component';
 
 export const routes: Routes = [
   {
@@ -35,7 +35,7 @@ export const routes: Routes = [
           },
           {
             path : 'updateUser',
-            component : UpdateComponent
+            component : UpdateUserComponent
           }
         ]
       },

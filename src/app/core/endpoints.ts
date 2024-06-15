@@ -9,30 +9,29 @@ export const navLinks = [
       route: "/authorized/credits",
       icon: "/assets/icons/bag.svg",
     },
-    // todo: check it once
     {
       label: "Image Restore",
-      route: "/transformations/add/restore",
+      route: "/authorized/trasformation/restore",
       icon: "/assets/icons/image.svg",
     },
     {
       label: "Generative Fill",
-      route: "/transformations/add/fill",
+      route: "/authorized/trasformation/fill",
       icon: "/assets/icons/stars.svg",
     },
     {
       label: "Object Remove",
-      route: "/transformations/add/remove",
+      route: "/authorized/trasformation/remove",
       icon: "/assets/icons/scan.svg",
     },
     {
       label: "Object Recolor",
-      route: "/transformations/add/recolor",
+      route: "/authorized/trasformation/recolor",
       icon: "/assets/icons/filter.svg",
     },
     {
       label: "Background Remove",
-      route: "/transformations/add/removeBackground",
+      route: "/authorized/trasformation/removeBackground",
       icon: "/assets/icons/camera.svg",
     },
    
@@ -126,6 +125,7 @@ export const navLinksBottom = [
   
   export const transformationTypes = {
     restore: {
+      // Image Restore
       type: "restore",
       title: "Restore Image",
       subTitle: "Refine images by removing noise and imperfections",
@@ -133,6 +133,7 @@ export const navLinksBottom = [
       icon: "image.svg",
     },
     removeBackground: {
+      // Background Remove
       type: "removeBackground",
       title: "Background Remove",
       subTitle: "Removes the background of the image using AI",
@@ -140,6 +141,7 @@ export const navLinksBottom = [
       icon: "camera.svg",
     },
     fill: {
+      // Generative Fill
       type: "fill",
       title: "Generative Fill",
       subTitle: "Enhance an image's dimensions using AI outpainting",
